@@ -1,0 +1,15 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "nombre": "Televisor LG 43 pulgadas",
+            "precio": 200000
+        },
+        {
+            "id": 2,
+            "nombre": "Televisor Samsung 32 pulgadas",
+            "precio": 150000
+        }
+
+    ]
+}
