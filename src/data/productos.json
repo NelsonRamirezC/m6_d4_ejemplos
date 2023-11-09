@@ -9,6 +9,11 @@
             "id": 2,
             "nombre": "Televisor Samsung 32 pulgadas",
             "precio": 150000
+        },
+        {
+            "id": 3,
+            "nombre": "Lavadora de carga frontal Mademsa 11 kilos",
+            "precio": 180000
         }
 
     ]
