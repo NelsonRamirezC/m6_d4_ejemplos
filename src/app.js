@@ -7,6 +7,12 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 const app = express();
 
+
+//rutas de vista
+app.get("/", (req, res) => {
+    res.sendFile(path.join(__dirname, "../public/index.html"));
+})
+
 const leerData = async () => {
     let rutaArchivo = path.join(__dirname, "/data/productos.json");
     let datos = fs.readFileSync(rutaArchivo, "utf8");
@@ -26,7 +32,7 @@ app.get("/api/productos/filter/id", async (req, res) => {
     let productos = data.productos;
     let {id} = req.query;
     
-    let productoBuscado = productos.find(producto => producto.id == id);
+    let productoBuscado = productos.find(producto => producto.id == Number(id));
 
     if(productoBuscado){
         res.json({producto: productoBuscado})
