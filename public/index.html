@@ -89,7 +89,7 @@
             filtrarProductos();
         } */
 
-        const manejadorkeydownInputForm = (event) => {
+        const manejadorkeyupInputForm = (event) => {
             filtrarProductos();
     
         }
@@ -97,7 +97,7 @@
         //formFiltroNombre.addEventListener("submit", manejadorSubmitForm);
 
         //evento que funciona al presionar teclas dentro del input que filtra por nombre
-        inputFormNombre.addEventListener("keydown", manejadorkeydownInputForm);
+        inputFormNombre.addEventListener("keyup", manejadorkeyupInputForm);
 
 
 
